@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buscador de Canciones</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <h1>Buscador de canciones</h1>
+    <form class="song-search">
+      <input
+        type="text"
+        name="artist"
+        placeholder="Nombre del artista"
+        required
+      />
+      <input
+        type="text"
+        name="song"
+        placeholder="Nombre de la cancion"
+        required
+      />
+      <input type="submit" class="btn btn-primary" value="Buscar" />
+    </form>
+    <div class="loader lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+    <aside class="error"></aside>
+    <main>
+      <article class="artist"></article>
+      <article class="song"></article>
+    </main>
+    <script src="scripts/main.js"></script>
+  </body>
+</html>
